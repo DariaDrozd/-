@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Застосунок "База даних по роботі з клієнтами"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>База даних по роботі з клієнтами</h1>
+    </header>
+    <main>
+        <section id="filter-section">
+            <h2>Відфільтровані клієнти</h2>
+            <!-- Поля фільтрації залишаються без змін -->
+        </section>
+        <section id="customer-cards-section">
+            <h2>Картки клієнтів</h2>
+            <!-- Кнопка "Add Customer" замінена на форму для додавання нового клієнта -->
+            <form id="add-customer-form">
+                <label for="customer-name">Ім'я:</label>
+                <input type="text" id="customer-name" placeholder="Enter name" required>
+                <label for="customer-company">Компанія:</label>
+                <input type="text" id="customer-company" placeholder="Enter company" required>
+                <label for="customer-sum">Сума замовлення:</label>
+                <input type="number" id="customer-sum" placeholder="Enter sum" required>
+                <label for="customer-product">Продукт:</label>
+                <input type="text" id="customer-product" placeholder="Enter product" required>
+                <button type="submit" id="add-button">Створити</button>
+            </form>
+            <!-- Додаємо кнопку для фільтрації -->
+            <button id="filter-button">Фільтрувати</button>
+            <!-- Кнопка "Clear Filter" залишається без змін -->
+            <button id="clear-button">Очистити</button>
+            <div id="customer-cards">
+                <!-- Карточки клієнтів будуть відображатися ось тут -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Дрозд Дар'я Геннадіївна. Всі права захищені.</p>
+    </footer>
+    <script src="script.js"></script>
+   
+</body>
+</html>
